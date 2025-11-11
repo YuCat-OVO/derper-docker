@@ -8,7 +8,7 @@ FROM alpine:latest
 WORKDIR /app
 
 RUN apk update && \
-    apk add --no-cache ca-certificates && \
+    apk add --no-cache ca-certificates git && \
     mkdir /app/certs
 
 ENV DERP_DOMAIN=your-hostname.com
